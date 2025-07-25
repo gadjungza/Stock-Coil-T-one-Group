@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สร้างบัญชีผู้ใช้ - Stock Coil T-one Group</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>สร้างบัญชีผู้ใช้ใหม่</h2>
+        <p>กรอกข้อมูลเพื่อสร้างบัญชีสำหรับระบบ Stock Coil</p>
+
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="fullname">ชื่อ-นามสกุล</label>
+                <input type="text" id="fullname" name="fullname" placeholder="เช่น สมชาย ใจดี" required>
+            </div>
+
+            <div class="input-group">
+                <label for="username">ชื่อผู้ใช้งาน (Username)</label>
+                <input type="text" id="username" name="username" placeholder="ใช้สำหรับ Login" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">รหัสผ่าน (Password)</label>
+                <input type="password" id="password" name="password" placeholder="อย่างน้อย 8 ตัวอักษร" required>
+            </div>
+
+            <div class="input-group">
+                <label for="role">ระดับสิทธิ์</label>
+                <select id="role" name="role" required>
+                    <option value="Branch">Branch (สาขา)</option>
+                    <option value="Admin">Admin (ผู้ดูแลระบบ)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="company">บริษัท</label>
+                <select id="company" name="company" required>
+                    <option value="">--- กรุณาเลือกบริษัท ---</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="branch">สาขา</label>
+                <select id="branch" name="branch" required disabled>
+                    <option value="">--- กรุณาเลือกสาขา ---</option>
+                </select>
+            </div>
+             <div class="input-group">
+                <label for="branchCode">รหัสสาขา</label>
+                <input type="text" id="branchCode" name="branchCode" readonly>
+            </div>
+
+            <button type="submit">ลงทะเบียนผู้ใช้งาน</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+input[readonly] {
+    background-color: #ecf0f1;
+    cursor: not-allowed;
+}
+
+select[disabled] {
+    background-color: #ecf0f1;
+    color: #95a5a6;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #229954;
+}
+
+/* --- โค้ดเดิมจากด้านบน --- */
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* เปลี่ยนเป็น flex-start */
+    min-height: 100vh;
+    color: #333;
+    padding-top: 40px; /* เพิ่ม padding ด้านบน */
+}
+
+/* ... โค้ด form-container และอื่นๆ ... */
+
+
+/* --- โค้ดใหม่สำหรับตาราง --- */
+.table-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-user-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.add-user-btn:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+thead th {
+    background-color: #f8f9fa;
+    color: #34495e;
+    font-weight: 500;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.role {
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.role.admin {
+    background-color: #e74c3c; /* สีแดง */
+}
+
+.role.branch {
+    background-color: #3498db; /* สีฟ้า */
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 5px;
+    padding: 5px;
+    color: #7f8c8d;
+    transition: color 0.3s;
+}
+
+.action-btn.view:hover { color: #2980b9; }
+.action-btn.edit:hover { color: #f39c12; }
+.action-btn.delete:hover { color: #c0392b; }

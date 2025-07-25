@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จัดการผู้ใช้งาน - Stock Coil T-one Group</title>
+    <link rel="stylesheet" href="style.css"> <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="table-container">
+        <div class="table-header">
+            <h2>รายชื่อผู้ใช้งานในระบบ</h2>
+            <a href="register.html" class="add-user-btn">+ เพิ่มผู้ใช้งานใหม่</a>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ชื่อผู้ใช้งาน</th>
+                    <th>ชื่อ-นามสกุล</th>
+                    <th>บริษัท</th>
+                    <th>สาขา</th>
+                    <th>รหัสสาขา</th>
+                    <th>ระดับสิทธิ์</th>
+                    <th>จัดการ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>admin01</strong></td>
+                    <td>แอดมิน ใหญ่สุด</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><span class="role admin">Admin</span></td>
+                    <td>
+                        <button class="action-btn view">👁️</button>
+                        <button class="action-btn edit">✏️</button>
+                        <button class="action-btn delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>t-one_wn</strong></td>
+                    <td>สมศักดิ์ รักงาน</td>
+                    <td>บ.ที-วัน สตีล โซลูชั่น จำกัด</td>
+                    <td>วังน้อย</td>
+                    <td>WN</td>
+                    <td><span class="role branch">Branch</span></td>
+                    <td>
+                        <button class="action-btn view">👁️</button>
+                        <button class="action-btn edit">✏️</button>
+                        <button class="action-btn delete">🗑️</button>
+                    </td>
+                </tr>
+                 <tr>
+                    <td><strong>v-steel_ry</strong></td>
+                    <td>มานี มีของ</td>
+                    <td>บ.วี-สตีล เมทัล ซัพพลาย จำกัด</td>
+                    <td>ระยอง</td>
+                    <td>RY</td>
+                    <td><span class="role branch">Branch</span></td>
+                    <td>
+                        <button class="action-btn view">👁️</button>
+                        <button class="action-btn edit">✏️</button>
+                        <button class="action-btn delete">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>sinchai_kk</strong></td>
+                    <td>ปิติ ชูใจ</td>
+                    <td>ห้างหุ้นส่วนจักัด สินชัยกิจพาณิชย์</td>
+                    <td>ขอนแก่น</td>
+                    <td>KK</td>
+                    <td><span class="role branch">Branch</span></td>
+                    <td>
+                        <button class="action-btn view">👁️</button>
+                        <button class="action-btn edit">✏️</button>
+                        <button class="action-btn delete">🗑️</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="manage.js"></script>
+</body>
+</html>
