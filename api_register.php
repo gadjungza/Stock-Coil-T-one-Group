@@ -1,3 +1,4 @@
+<?php
 // ตั้งค่าการเชื่อมต่อฐานข้อมูล
 $servername = "localhost";
 $db_username = "root";
